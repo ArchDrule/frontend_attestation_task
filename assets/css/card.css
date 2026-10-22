@@ -1,0 +1,281 @@
+@font-face {
+    font-family: Akshar;
+    font-weight: bold;
+    src: url(../fonts/Akshar/static/Akshar-Bold.ttf);
+}
+
+@font-face {
+    font-family: Barlow;
+    font-weight: 400;
+    src: url(../fonts/Barlow/Barlow-Regular.ttf);
+}
+
+@font-face {
+    font-family: Barlow;
+    font-weight: 500;
+    src: url(../fonts/Barlow/Barlow-Medium.ttf);
+}
+
+@font-face {
+    font-family: Barlow;
+    font-weight: 600;
+    src: url(../fonts/Barlow/Barlow-SemiBold.ttf);
+}
+
+
+@font-face {
+    font-family: Barlow;
+    font-weight: 800;
+    src: url(../fonts/Barlow/Barlow-Bold.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+
+    font-family: Barlow, sans-serif;
+    font-weight: 500;
+    color: white;
+
+    background-color: #0C0F23;
+}
+
+.section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+.section_type_product {
+    height:820px;
+    background: linear-gradient(rgba(12, 15, 35, 0.6), rgba(12, 15, 35, 0.6)), url(../images/png/gamepad-background.png);
+    background-repeat: no-repeat;
+    background-position: 1250px 300px;
+    background-size: 40%;
+}
+
+.section_type_hollow {
+    height: 500px;
+    background-color: black;
+}
+
+.section__decor-circle {
+    position: absolute;
+    translate: -50% -50%;
+
+    border-radius: 1000px;
+    background-color: #D83A3A;
+    filter: blur(260px);
+}
+
+.section__decor-circle_position_1 {
+    width: 500px;
+    height: 500px;
+    top: 0;
+    left: 0;
+}
+
+.section__decor-circle_position_2 {
+    width: 350px;
+    height: 350px;
+    top: -100px;
+    left: 70%;
+}
+
+.section__decor-circle_position_3 {
+    width: 250px;
+    height: 250px;
+    top: 80%;
+    right: 0;
+}
+
+.section__decor-circle_position_4 {
+    width: 250px;
+    height: 250px;
+    top: 100%;
+    right: 15%;
+}
+
+.product {
+    width: 1444px;
+    display: flex;
+    align-items: center;
+    transform: translate(120px, 0);
+}
+
+.console-title-block {
+    width: 748px;
+    height: 620px;
+    background-color: #D83A3A;
+    border-radius: 45px;
+    overflow: hidden;
+}
+
+.console-title-block__texts {
+    width: 748px;
+    transform: rotate(-180deg) translate(140px, 0);
+    writing-mode: vertical-lr;
+    overflow: hidden;
+}
+
+.console-title-block__text {
+    font-family: Akshar, sans-serif;
+    text-transform: uppercase;
+    font-size: 120px;
+    line-height: 104px;
+    margin: 80px 12px 80px 12px;
+}
+
+.console-title-block__text_opacity_10 {
+    opacity: 10%;
+}
+
+.console-title-block__text_opacity_25 {
+    opacity: 25%;
+}
+
+.console-title-block__text_opacity_45 {
+    opacity: 45%;
+}
+
+.console-title-block__text_opacity_65 {
+    opacity: 65%;
+}
+
+.console-title-block__text_opacity_80 {
+    opacity: 80%;
+}
+
+.gamepad-image {
+    position: absolute;
+}
+
+.console-title-block__image {
+    width: 650px;
+    z-index: 10;
+    transform: translate(-22px, 72px);
+}
+
+.product__info {
+    width: 930px;
+    height: 400px;
+    transform: translate(-240px, 0);
+    background-color: rgba(18, 22, 47, 0.5);
+    padding: 44px;
+    border-radius: 45px;
+    backdrop-filter: blur(3px); 
+}
+
+.product__content {
+    width: 450px;
+    margin: 0 20px 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product__title {
+    font-size: 72px;
+    font-weight: 800;
+    line-height: 84px;
+}
+
+.product__subtitle {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.product__price {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.colors-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.colors-container__color-title {
+    font-size: 18px;
+}
+
+.colors-container__color-radio {
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    background: #0C0F23;
+    border-radius: 100px;
+    border: 2px solid transparent;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.colors-container__color-radio:disabled {
+    border: 2px solid transparent;
+}
+
+.colors-container__color-radio:checked {
+    border: 2px solid white;
+}
+
+.colors-container__color-radio_color_red {
+    background: #C33940;
+}
+
+.colors-container__color-radio_color_blue {
+    background: #1220D9;
+}
+
+.colors-container__color-radio_color_green {
+    background: #48E21D;
+}
+
+.product__description {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.product__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 100px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+
+    background: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+
+.button_red {
+    font-weight: 600;
+    background-color: #D83A3A;
+    box-shadow: 0 0 30px rgba(216, 58, 58, 0.5);
+    border: 2px solid #F74B4B;
+    padding: 16px 32px;
+}
+
+.button_with-icon {
+    padding: 16px 0;
+}
